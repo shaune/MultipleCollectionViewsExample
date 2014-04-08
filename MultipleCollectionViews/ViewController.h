@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UICollectionView *firstCollectionView;
+@property (nonatomic, strong) IBOutlet UICollectionView *secondCollectionView;
+@property (nonatomic, strong) IBOutlet UICollectionView *thirdCollectionView;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B9861EF1E74A0ABD5272FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FDE2119DA14B278B9AE1D7 /* libPods.a */; };
 		4509235D18F34D34002C3EFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4509235C18F34D34002C3EFC /* Foundation.framework */; };
 		4509235F18F34D34002C3EFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4509235E18F34D34002C3EFC /* CoreGraphics.framework */; };
 		4509236118F34D34002C3EFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4509236018F34D34002C3EFC /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		4509238118F34D34002C3EFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4509236018F34D34002C3EFC /* UIKit.framework */; };
 		4509238918F34D34002C3EFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4509238718F34D34002C3EFC /* InfoPlist.strings */; };
 		4509238B18F34D34002C3EFC /* MultipleCollectionViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4509238A18F34D34002C3EFC /* MultipleCollectionViewsTests.m */; };
+		4509239818F35457002C3EFC /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4509239718F35457002C3EFC /* CollectionViewCell.m */; };
+		45931F5818F3D98A00C3FD5B /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45931F5718F3D98900C3FD5B /* placeholder.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,11 @@
 		4509238618F34D34002C3EFC /* MultipleCollectionViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleCollectionViewsTests-Info.plist"; sourceTree = "<group>"; };
 		4509238818F34D34002C3EFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4509238A18F34D34002C3EFC /* MultipleCollectionViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleCollectionViewsTests.m; sourceTree = "<group>"; };
+		4509239618F35457002C3EFC /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		4509239718F35457002C3EFC /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		45931F5718F3D98900C3FD5B /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		6AEF01BEB743408EA7D5270F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E4FDE2119DA14B278B9AE1D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				4509235F18F34D34002C3EFC /* CoreGraphics.framework in Frameworks */,
 				4509236118F34D34002C3EFC /* UIKit.framework in Frameworks */,
 				4509235D18F34D34002C3EFC /* Foundation.framework in Frameworks */,
+				19B9861EF1E74A0ABD5272FF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +93,12 @@
 		4509235018F34D34002C3EFC = {
 			isa = PBXGroup;
 			children = (
+				45931F5618F3D98900C3FD5B /* resources */,
 				4509236218F34D34002C3EFC /* MultipleCollectionViews */,
 				4509238418F34D34002C3EFC /* MultipleCollectionViewsTests */,
 				4509235B18F34D34002C3EFC /* Frameworks */,
 				4509235A18F34D34002C3EFC /* Products */,
+				6AEF01BEB743408EA7D5270F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,7 @@
 				4509235E18F34D34002C3EFC /* CoreGraphics.framework */,
 				4509236018F34D34002C3EFC /* UIKit.framework */,
 				4509237E18F34D34002C3EFC /* XCTest.framework */,
+				E4FDE2119DA14B278B9AE1D7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +134,8 @@
 				4509237518F34D34002C3EFC /* ViewController.m */,
 				4509237718F34D34002C3EFC /* Images.xcassets */,
 				4509236318F34D34002C3EFC /* Supporting Files */,
+				4509239618F35457002C3EFC /* CollectionViewCell.h */,
+				4509239718F35457002C3EFC /* CollectionViewCell.m */,
 			);
 			path = MultipleCollectionViews;
 			sourceTree = "<group>";
@@ -155,6 +169,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		45931F5618F3D98900C3FD5B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				45931F5718F3D98900C3FD5B /* placeholder.jpg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4509238E18F34D34002C3EFC /* Build configuration list for PBXNativeTarget "MultipleCollectionViews" */;
 			buildPhases = (
+				59F0D109DC5E4B9BA8DC3B2B /* Check Pods Manifest.lock */,
 				4509235518F34D34002C3EFC /* Sources */,
 				4509235618F34D34002C3EFC /* Frameworks */,
 				4509235718F34D34002C3EFC /* Resources */,
+				0DC782FB091F4FE6A045191F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +258,7 @@
 				4509237318F34D34002C3EFC /* Main_iPad.storyboard in Resources */,
 				4509237818F34D34002C3EFC /* Images.xcassets in Resources */,
 				4509237018F34D34002C3EFC /* Main_iPhone.storyboard in Resources */,
+				45931F5818F3D98A00C3FD5B /* placeholder.jpg in Resources */,
 				4509236718F34D34002C3EFC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +273,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DC782FB091F4FE6A045191F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59F0D109DC5E4B9BA8DC3B2B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4509235518F34D34002C3EFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +313,7 @@
 			files = (
 				4509237618F34D34002C3EFC /* ViewController.m in Sources */,
 				4509236D18F34D34002C3EFC /* AppDelegate.m in Sources */,
+				4509239818F35457002C3EFC /* CollectionViewCell.m in Sources */,
 				4509236918F34D34002C3EFC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +446,7 @@
 		};
 		4509238F18F34D34002C3EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEF01BEB743408EA7D5270F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -400,6 +460,7 @@
 		};
 		4509239018F34D34002C3EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEF01BEB743408EA7D5270F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -470,6 +531,7 @@
 				4509239018F34D34002C3EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4509239118F34D34002C3EFC /* Build configuration list for PBXNativeTarget "MultipleCollectionViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +540,7 @@
 				4509239318F34D34002C3EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
